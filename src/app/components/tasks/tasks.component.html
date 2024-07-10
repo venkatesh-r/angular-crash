@@ -1,3 +1,4 @@
-<ul *ngFor="let employee of employers">
-  <li>{{ employee.name }} - {{ employee.email }}</li>
-</ul>
+<app-employee-list
+  *ngFor="let employee of employers"
+  [employee]="employee"
+></app-employee-list>

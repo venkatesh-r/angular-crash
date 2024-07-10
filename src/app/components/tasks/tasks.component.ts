@@ -9,6 +9,9 @@ import { Task } from '../../Task';
 })
 export class TasksComponent {
   employers: Task[] = [];
+  /*   onDelete(employee) {
+    console.log(employee);
+  } */
   constructor(private taskService: TaskService) {}
   ngOnInit(): void {
     this.taskService

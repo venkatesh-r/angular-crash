@@ -1,0 +1,9 @@
+<h4>
+  {{ employee.name }}
+  <fa-icon
+    [ngStyle]="{ color: 'red' }"
+    [icon]="faTimes"
+    (click)="onDelete(employee)"
+  ></fa-icon>
+</h4>
+<p>{{ employee.email }}</p>
